@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}Upload{% endblock %}
+{% block body %}
+    <div class="col-md-6 col-md-offset-3">
+        <form id="form" action="{{ url_for('submit_form') }}" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Picture</label>
+                <input type="file" class="form-control" name="file" id="file" accept="image/*">
+            </div>
+            <button class="button btn-success" form="form">Upload</button>
+        </form>
+    </div>
+
+{% endblock %}

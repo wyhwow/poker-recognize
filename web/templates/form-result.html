@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block title %}Result{% endblock %}
+{% block body %}
+    <h1>Uploaded picture</h1>
+    <!--<table class="table table-bordered table-responsive table-hover table-striped">-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<td>Flie Name</td>-->
+            <!--<td>Picture</td>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody>-->
+        <!--{% for file in session.files %}-->
+            <!--<tr>-->
+                <!--<td>{{ file }}</td>-->
+                <!--<td><a href="{{ url_for('get_uploaded_file',filename="real.jpg")  }}">Click to see the picture</a></td>-->
+            <!--</tr>-->
+        <!--{% endfor %}-->
+        <!--</tbody-->
+    <!--</table>-->
+
+    <hr>
+    <img src="{{ url_for('static',filename='images/result.jpg') }}">
+{% endblock %}
